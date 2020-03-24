@@ -1,0 +1,91 @@
+body {
+    background-color: #0A090A;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    background-image: url('../img/main-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.container {
+    max-width: 1140px;
+    /* Выравнивание по центру */
+    margin: auto;
+}
+/* Стили для шапки */
+
+.header {
+    padding-top: 40px;
+    display: flex;
+    /* Выравниваю по центру по вертикали  */
+    align-items: center;
+    justify-content: space-between;
+}
+ 
+.logo {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    flex: 0.8;
+}
+
+.search-input {
+    flex: 1;
+    /* Фоновый цвет */
+    background: rgba(196, 196, 196, 0.5);
+    /* Скругление */
+    border-radius: 5px;
+    /* Внутренний отступ сверху */
+    padding-top: 12px;
+    /* Внутренний отступ снизу */
+    padding-bottom: 12px;
+    /* Внутренний отступ по краям */
+    padding-left: 18px;
+    padding-right: 18px;
+    /* Убираем рамку */
+    border: none;
+    color: #AEAEAE;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+::-webkit-input-placeholder {
+    color: #AEAEAE;
+}
+
+::-moz-placeholder {
+    color: #AEAEAE;
+}/* Firefox 19+ */
+
+:-moz-placeholder {
+    color: #AEAEAE;
+}/* Firefox 18- */
+
+:-ms-input-placeholder {
+    color: #AEAEAE;
+}
+
+.search-button {
+    background-color: transparent;
+    border: none;
+    padding: 10px 18px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    margin-left: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
